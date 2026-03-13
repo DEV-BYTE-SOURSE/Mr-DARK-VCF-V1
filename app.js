@@ -1,25 +1,26 @@
-/// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyDf5B7uXlLxACh-NggQSOK-dTEkFHmZPNM",
-  authDomain: "junior-ai-8cd67.firebaseapp.com",
-  projectId: "junior-ai-8cd67",
-  storageBucket: "junior-ai-8cd67.firebasestorage.app",
-  messagingSenderId: "128608244069",
-  appId: "1:128608244069:web:95fdc78df0f589ef4c118c",
-  measurementId: "G-WFYN5L59DQ"
-};
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-const TARGET =800;
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyC9yunW4riFuHqaX5CWgQSSGQZDzQ4nYjo",
+    authDomain: "mr-dark-5d7da.firebaseapp.com",
+    projectId: "mr-dark-5d7da",
+    storageBucket: "mr-dark-5d7da.firebasestorage.app",
+    messagingSenderId: "175441718248",
+    appId: "1:175441718248:web:a36b7015a013581178525d",
+    measurementId: "G-172Q6T5623"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  const TARGET =800;
 
 // DOM
 const submitBtn = document.getElementById("submitBtn");
