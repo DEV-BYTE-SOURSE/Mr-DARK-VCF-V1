@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mr DARK VCF (1)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Live animated background container -->
+  <div id="background"></div>
+
+  <div class="container">
+    <h1 class="title">Mr DARK VCF (1)</h1>
+    <p class="subtitle">Create & Share Global Contacts Instantly</p>
+
+    <div class="form-card">
+      <label>Name</label>
+      <input id="name" type="text" placeholder="Your name">
+
+      <label>Contact</label>
+      <input id="phone" type="text" placeholder="+254700000000">
+
+      <button id="submitBtn">Submit Details to VCF</button>
+      <p id="success" class="success hidden">Contact submitted successfully!</p>
+    </div>
+
+    <p id="alreadySubmitted" class="success hidden" style="color:red;text-align:center;margin-top:10px;">
+      You have already submitted your contact.
+    </p>
+
+    <div class="stats">
+      <div class="stat" id="stat-current" style="--color:#1e90ff; --pct:0;">
+        <span id="current">0</span>
+        <p>Current</p>
+      </div>
+      <div class="stat" id="stat-target" style="--color:#ff4d4d; --pct:0;">
+        <span id="target">800</span>
+        <p>Target</p>
+      </div>
+      <div class="stat" id="stat-remaining" style="--color:#ffd300; --pct:360;">
+        <span id="remaining">800</span>
+        <p>Remaining</p>
+      </div>
+    </div>
+
+    <h3 class="progress-title">Progress to Unlock: <span id="percent">0%</span></h3>
+    <div class="progress-bar"><div id="progressFill"></div></div>
+
+    <div id="channelBox" class="channel-box">
+      <p>VCF file will be released in our WhatsApp channel once we reach <b>800 contacts</b></p>
+
+      <a href="https://whatsapp.com/channel/0029VbCX4j9GE56efWUfV83s"
+         class="whatsapp-btn" target="_blank">Join WhatsApp Channel</a>
+
+      <a href="https://wa.link/654i99"
+         class="support-btn" target="_blank">Contact owner(admin)</a>
+
+      <!-- Luminous follow/help message -->
+      <p class="follow-msg">.
+      </p>
+
+      <p class="nb-warning">
+        .
+      </p>
+    </div>
+
+    <div id="locked" class="locked hidden">
+      🔒 Verification Closed <br>
+      ✔ File to be dropped in the WhatsApp channel <br>
+      ✔ If you verified your contact, join the channel using the button above
+    </div>
+
+    <button id="downloadVCF" style="display:none;">Download VCF</button>
+  </div>
+
+  <!-- placeholder for script -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
