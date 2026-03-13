@@ -51,8 +51,8 @@ function openWhatsApp() {
 }
 
 // --- ROUND SYSTEM (kept but NOT used in counting) ---
-const roundStartKey = "mr_dark_roundStart";
-const vcfCreatedForRoundKey = "mr_dark_vcfCreatedForRound";
+const roundStartKey = "princev_roundStart";
+const vcfCreatedForRoundKey = "princev_vcfCreatedForRound";
 
 function getRoundStart() {
   const raw = localStorage.getItem(roundStartKey);
