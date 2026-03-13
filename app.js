@@ -169,11 +169,7 @@ submitBtn.addEventListener("click", async () => {
     }, 1000);
 
     updateStats();
-  } catch (error) {
-    console.error("Error adding contact:", error);
-    alert("Failed to submit contact. Try again.");
-  }
-});
+  } 
 
 // Generate VCF (GLOBAL – FIXED)
 async function generateVCF(auto = false) {
