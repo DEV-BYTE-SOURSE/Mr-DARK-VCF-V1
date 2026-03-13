@@ -21,7 +21,7 @@
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
-
+  const TARGET =800;
 
 // DOM
 const submitBtn = document.getElementById("submitBtn");
