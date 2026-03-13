@@ -10,6 +10,7 @@
   const firebaseConfig = {
     apiKey: "AIzaSyC9yunW4riFuHqaX5CWgQSSGQZDzQ4nYjo",
     authDomain: "mr-dark-5d7da.firebaseapp.com",
+    databaseURL: "https://mr-dark-5d7da-default-rtdb.firebaseio.com",
     projectId: "mr-dark-5d7da",
     storageBucket: "mr-dark-5d7da.firebasestorage.app",
     messagingSenderId: "175441718248",
@@ -20,7 +21,7 @@
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
-  const TARGET =800;
+
 
 // DOM
 const submitBtn = document.getElementById("submitBtn");
@@ -42,10 +43,10 @@ const statCurrent = document.getElementById("stat-current");
 const statTarget = document.getElementById("stat-target");
 const statRemaining = document.getElementById("stat-remaining");
 
-const whatsappWebLink = "https://whatsapp.com/channel/0029VbCX4j9GE56efWUfV83s";
+const whatsappWebLink = "https://whatsapp.com/channel/0029Vb6XAv0GOj9lYT2p3l1X";
 
 // Update support link (preserve)
-supportBtn.href = "https://wa.link/654i99";
+supportBtn.href = "https://wa.link/li5xwd";
 
 function openWhatsApp() {
   window.open(whatsappWebLink, "_blank");
@@ -169,7 +170,8 @@ submitBtn.addEventListener("click", async () => {
     }, 1000);
 
     updateStats();
-  } 
+  }
+});
 
 // Generate VCF (GLOBAL – FIXED)
 async function generateVCF(auto = false) {
@@ -198,7 +200,7 @@ END:VCARD
 
     const a = document.createElement("a");
     a.href = url;
-    a.download = "Mr_DARK_VCF_v1.vcf";
+    a.download = "Prince_VCF_v3.vcf";
 
     downloadBtn.style.display = "inline-block";
 
